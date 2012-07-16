@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketsDemo", "WebSocket
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockTicker", "StockTicker\StockTicker.csproj", "{FBF84707-CD8F-456E-B491-21C05155308C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildFromScratch", "BuildFromScratch\BuildFromScratch.csproj", "{ED14BF6C-5FF9-4265-9C1B-F4FD23E1BCF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{FBF84707-CD8F-456E-B491-21C05155308C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBF84707-CD8F-456E-B491-21C05155308C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBF84707-CD8F-456E-B491-21C05155308C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED14BF6C-5FF9-4265-9C1B-F4FD23E1BCF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED14BF6C-5FF9-4265-9C1B-F4FD23E1BCF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED14BF6C-5FF9-4265-9C1B-F4FD23E1BCF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED14BF6C-5FF9-4265-9C1B-F4FD23E1BCF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
