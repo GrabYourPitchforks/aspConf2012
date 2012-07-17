@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{FBF84707-CD8F-456E-B491-21C05155308C}</ProjectGuid>
+    <ProjectGuid>{5A1EE713-D560-4B83-B082-C0309F52267D}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>StockTicker</RootNamespace>
-    <AssemblyName>StockTicker</AssemblyName>
+    <RootNamespace>Fibonacci</RootNamespace>
+    <AssemblyName>Fibonacci</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -39,9 +39,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.WebSockets">
-      <HintPath>..\packages\Microsoft.WebSockets.0.2.3\lib\net45\Microsoft.WebSockets.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -60,20 +57,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.aspx" />
-    <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExternalTickerService.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
+    <Compile Include="Fib.ashx.cs">
+      <DependentUpon>Fib.ashx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TickerHandler.ashx.cs">
-      <DependentUpon>TickerHandler.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="TickerWebSocketHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.Debug.config">
@@ -86,10 +76,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TickerHandler.ashx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="packages.config" />
+    <Content Include="Fib.ashx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -106,7 +93,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:59525/</IISUrl>
+          <IISUrl>http://localhost:20112/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

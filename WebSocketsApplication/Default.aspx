@@ -8,7 +8,7 @@
     <script type="text/javascript">
         var socket;
         function initializeWebSocket() {
-            var host = "ws://<%: Request.Url.Host %>:<%: Request.Url.Port %><%: Response.ApplyAppPathModifier("~/EchoHandler.ashx") %>";
+            var host = "ws://<%: Request.Url.Host %>:<%: Request.Url.Port %><%: Response.ApplyAppPathModifier("~/Handler.ashx") %>";
 
             try {
                 socket = new WebSocket(host);
@@ -43,7 +43,7 @@
     </script>
 </head>
 <body>
-    <h1>Web Socket Echo Demo</h1>
+    <h1>Web Socket Demo</h1>
     <p id="serverStatus"></p>
     <p>
         This text will be sent on the socket:<br />
